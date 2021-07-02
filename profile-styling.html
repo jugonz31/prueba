@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Profile Styling</title>
+
+    <style type="text/css">
+      /*
+			Primary color: #d81b60;
+			Primary darker color: #880e4f;
+
+			Sidebar width: 250px;
+
+			Padding across the site: 30px; ( smaller padding will be 15px or 10px)
+		*/
+      html {
+        background-color: #c9c9c9;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        color: #000000;
+      }
+
+      aside {
+        position: absolute;
+        float: left;
+        width: 250px;
+        height: 100vh;
+      }
+
+      nav,
+      footer {
+        display: flex;
+        height: 60px;
+        align-items: center;
+      }
+
+      nav {
+        background-color: #d81b60;
+        justify-content: flex-end;
+        top: 0;
+        width: 100%;
+      }
+
+      footer {
+        background-color: #1d1d1d;
+        color: #ffffff;
+        position: fixed;
+        bottom: 0;
+        width: 70%;
+        justify-content: space-between;
+      }
+
+      footer div {
+        padding: 30px;
+      }
+
+      a {
+        margin: auto 10px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      article {
+        margin-left: 250px;
+        padding: 0 30px;
+      }
+
+      section {
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px;
+        width: 100%;
+        padding-bottom: 30px;
+      }
+
+      .gallery img {
+        width: 100%;
+      }
+
+      .main-container {
+        position: relative;
+        background-color: #ffffff;
+        margin: auto;
+        width: 70%;
+        height: 100vh;
+      }
+
+      .logo-container {
+        background-color: #d81b60;
+        padding: 30px;
+      }
+
+      .profile-image-container {
+        background-color: #ebebeb;
+        border-radius: 100%;
+        width: 230px;
+        height: 230px;
+        margin: 10px;
+        overflow: hidden;
+        border-bottom: 10px solid #c9c9c9;
+      }
+
+      .profile-image-container img {
+        width: 200px;
+        height: 100%;
+        padding: 15px 15px;
+        object-fit: cover;
+        object-position: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <aside>
+        <div class="logo-container">
+          <img src="./images/adeptmind-logo-white.svg" />
+        </div>
+        <div class="profile-image-container">
+          <img src="./images/profile-image.png" />
+        </div>
+      </aside>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <article>
+        <section>
+          <h1>Developer at Adeptmind</h1>
+          <p>
+            Adeptmind is an Al company innovating in e-commerce search using
+            active learning and deep learning. Its co-founders recently came out
+            of a quite successful sale of their previous company. This time
+            around, they raised a little too much VC capital and are looking to
+            grow a kick-ass Silicon Valley style team right here in downtown
+            Toronto.
+          </p>
+          <p>
+            Our current engineering efforts focus on vertical expansion:
+            building more tools and services. Current projects ranges from
+            creating internal service to providing command line utilities as
+            well large scale crawling and data processing. If you are a hacker
+            minded developer like us, you will find it at home.
+          </p>
+          <p>
+            Of course, life in a young startup can get hectic. But we spend just
+            as much, if not more, effort to grow our engineers as well. We
+            actively hold technical seminars, send our people to conferences and
+            initiate manageable research project. We believe a company cannot
+            grow until the people can.
+          </p>
+        </section>
+        <section>
+          <h4>Gallery</h4>
+          <div class="gallery">
+            <img src="./images/image1.jpg" />
+            <img src="./images/image2.jpg" />
+            <img src="./images/image3.jpg" />
+            <img src="./images/image4.jpg" />
+            <img src="./images/image5.jpg" />
+            <img src="./images/image6.jpg" />
+          </div>
+        </section>
+      </article>
+      <footer>
+        <div>© 2018</div>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
